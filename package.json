@@ -15,7 +15,9 @@
     "publish": "truffle publish",
     "pretest": "npm run lint",
     "test": "truffle test",
-    "coverage": "solidity-coverage"
+    "coverage": "solidity-coverage",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -35,7 +37,8 @@
   "homepage": "https://github.com/ConsenSys/Tokens#readme",
   "dependencies": {
     "truffle": "^5.1.7",
-    "truffle-hdwallet-provider": "0.0.3"
+    "truffle-hdwallet-provider": "0.0.3",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "coveralls": "3.0.0",
@@ -48,5 +51,6 @@
     "eslint-plugin-react": "7.5.1",
     "solhint": "^2.3.0",
     "solidity-coverage": "^0.7.1"
-  }
+  },
+  "snyk": true
 }
